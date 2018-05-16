@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Connecting pieces</title>
+    <meta name="description" content="From PSD to HTML and CSS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+   
+    <div id="tlo_gora_gradient">
+
+    </div>
+
+    <div class="wrapper">
+
+        <header id="gora">
+            <div id="logo">
+                <a href="Index.html">
+                    <img src="img/logo.jpg">
+                </a>
+            </div>
+
+            <br class="clear" /> <!-- Znacznik br z klasą clear pomoże nam odpowiednio ustawić zawartość -->
+
+            <nav>
+                <ul>
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">O nas</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Oferta</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="baner">
+            <div id="slogan_gora">
+                <p>Inni dopiero się uczą</p>
+            </div>
+            <div id="slogan_dol">
+                <p>Ty już potrafisz</p>
+            </div>
+        </div>
+
+        <!-- Tu tworzymy div który obejmie inne divy ułożone w następującej kolejności: 1 - cień po lewej, 2 - trzy boxy poniżej (każdy z tych trzech boxów zostanie zdefiniowany w elemencie typu div), 3 - cień po prawej, 4 - cień poniżej tych trzech boxów -->
+        
+        <div id="cien_gora_lewy"> <!-- Grafika tutaj zostanie załadowana za pomocą CSS  -->
+        </div>
+
+        <div id="boxy_gora"> <!-- Teraz div dla div-ów zawierających każdy z osobna boxy, te trzy boxy w sumie -->
+            <!-- Pamiętamy, że za pomocą CSS będzie ładowany obrazek, a dla trybu hover podmieniany na drugi obrazek -->
+            <div id="box_gora_1">
+                <a href="#"></a>
+            </div>
+            <div id="box_gora_2">
+                <a href="#"></a>
+            </div>
+            <div id="box_gora_3">
+                <a href="#"></a>
+            </div>
+        </div>
+
+        <div id="cien_gora_prawy"> <!-- Grafika tutaj zostanie załadowana za pomocą CSS  -->
+        </div>
+
+        <div id="cien_baner_dol"> <!-- Grafika tutaj zostanie załadowana za pomocą CSS  -->
+        </div>
+
+    </div>
+
+    <section>
+        <div id="zawartość"> <!-- Stworzony by objąć to wszystko co poniżej banera czyli trzy artykuły i najpopularniejsze filmy - 6 obrazków -->
+            <div id="artykuly"> <!-- Artykuły będą składały się z następujących elementów: znacznik Header (czyli Nagłówek), w środku Nagłówek poziomu H2, akapit (czyli p), stopka (czyli element typu Footer), a w stopce będzie umieszczony jeszcze odnośnik. Całość będzie otoczona znacznikiem Article -->
+                <article>
+                    <header><h2>Program</h2></header>
+                    <p>Lorem ipsum dolor sit amet, co sectetur lorem adipiscing elit. Cillum aliqua occaecat sunt aliqua eiusmod consequat consectetur. Aliquip deserunt ipsum nulla magna est irure ad mollit deserunt reprehenderit aliqua. Occaecat officia nisi exercitation velit amet aliqua pariatur Lorem. Non deserunt ullamco ea deserunt do sint occaecat laboris tempor elit adipisicing nulla. Officia officia elit ad veniam anim voluptate esse amet. Sunt proident laboris aliqua cupidatat deserunt magna in incididunt irure qui.</p>
+                    <footer><a href="#" class="wiecej">Zobacz więcej</a></footer>
+                </article>
+                <article id="drugi_art"> 
+                    <!-- Dodałem id="drugi_art" aby w CSS ostylować drugi artykuł czyli dodać dwie pionowe linie wizualnie odsuwające go od pierwszego i trzeciego artykułu -->
+                    <header><h2>Pakiety</h2></header>
+                    <p>Lorem ipsum dolor sit amet, co sectetur lorem adipiscing elit. Cillum aliqua occaecat sunt aliqua eiusmod consequat consectetur. Aliquip deserunt ipsum nulla magna est irure ad mollit deserunt reprehenderit aliqua. Occaecat officia nisi exercitation velit amet aliqua pariatur Lorem. Non deserunt ullamco ea deserunt do sint occaecat laboris tempor elit adipisicing nulla. Officia officia elit ad veniam anim voluptate esse amet. Sunt proident laboris aliqua cupidatat deserunt magna in incididunt irure qui.</p>
+                    <footer><a href="#" class="wiecej">Zobacz więcej</a></footer>
+                </article>
+                <article>
+                    <header><h2>Newsletter</h2></header>
+                    <p>Lorem ipsum dolor sit amet, co sectetur lorem adipiscing elit. Cillum aliqua occaecat sunt aliqua eiusmod consequat consectetur. Aliquip deserunt ipsum nulla magna est irure ad mollit deserunt reprehenderit aliqua. Occaecat officia nisi exercitation velit amet aliqua pariatur Lorem. Non deserunt ullamco ea deserunt do sint occaecat laboris tempor elit adipisicing nulla. Officia officia elit ad veniam anim voluptate esse amet. Sunt proident laboris aliqua cupidatat deserunt magna in incididunt irure qui.</p>
+                    <footer><a href="#" class="wiecej">Zobacz więcej</a></footer>
+                </article>
+                <div id="cien_artykuly"></div> <!-- Grafika tutaj zostanie załadowana za pomocą CSS  -->
+                <br class="clear" />
+            </div>
+
+            <!-- Nagłowek H2, oraz DIV z 6 odnośnikami do filmów w formie obrazków wziętych z PSD -->
+            <h2>Popularne filmy</h2>
+
+            <div id="popularne_filmy">
+                <a href="#"><img src="img/popularne_obraz_1.jpg" alt="obraz 1"></a>
+                <a href="#"><img src="img/popularne_obraz_2.jpg" alt="obraz 2"></a>
+                <a href="#"><img src="img/popularne_obraz_3.jpg" alt="obraz 3"></a>
+                <a href="#"><img src="img/popularne_obraz_4.jpg" alt="obraz 4"></a>
+                <a href="#"><img src="img/popularne_obraz_5.jpg" alt="obraz 5"></a>
+                <a href="#"><img src="img/popularne_obraz_6.jpg" alt="obraz 6"></a>             
+            </div>
+
+            <br class="clear" />
+
+        </div>
+        
+    </section>
+
+    <footer id="stopka">
+        <div id="zawartosc_stopki">
+            <div id="wydawnictwo">
+                <h3>Wydawnictwo</h3>
+                <ul>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>                   
+                </ul>
+            </div>
+
+            <div id="kursy">
+                <h3>O naszych kursach</h3>
+                <ul>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>                   
+                </ul>
+            </div>
+
+            <div id="pomoc">
+                <h3>Pomoc</h3>
+                <ul>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>
+                    <li><a href="#">Regulamin</a></li>                   
+                </ul>
+            </div>
+
+            <div id="kontakt">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li>Pn-Pt 10:00-17:00</li>
+                    <li>Kom. 888 223 111</li>
+                    <li>Kom. 606-651-898</li>
+                    <li><a href="#">bok@strefakursow.pl</a></li>                  
+                </ul>
+            </div>
+            
+        </div>
+
+    </footer>
+
+    <div id="dol_strony">
+        <p>Copyright © 2012 Wydawnictwo Strefa Kursów</p>
+    </div>
+
+</body>
+</html>

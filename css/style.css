@@ -1,0 +1,69 @@
+/* @charset "utf-8"; */
+
+@font-face {
+    font-family: 'BeabsNeue';
+    src: url('../fonts/bebas/BebasNeue.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0 0 0 0;
+    position: relative;
+    background: #a0c75a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    border: none;
+}
+
+.wrapper {
+    width: 967px;
+    /* Aby móc wyśrodkować div trzeba najpierw nadać mu szerokość */
+    margin: 0 auto;
+    /* Środkujemy za pomocą marginesów - góra/dół 0, a po bokach wpisując auto*/
+    position: relative;
+}
+
+clear {
+    clear: both;
+}
+
+h2 {
+    /* Formatuję domyślny wygląd nagłówków h2 */
+    padding: 0;
+    margin: 0 0 20px 0;
+    /* g p d l */
+    font-family: Arial, Helvetica, sans-serif;
+    /* domyślna czcionka */
+    font-weight: normal;
+    /* domyślny wygląd czcionki */
+}
+
+/* góra */
+
+#logo {
+    display: block;
+    width: 187px;
+    height: 59px;
+    margin: 15px auto 25px 33px;
+    /* g p d l */
+    position: relative;
+    float: left;
+}
+
+#tlo_gora_gradient {
+    background: url(../img/tlo_gora_gradient.jpg) no-repeat;
+    width: 967px;
+    margin: 0 auto; /* g/d boki */
+    height: 79px;
+    position: relative;
+}
+
+#gora{
+    width: 967px;
+    height: 116px;
+    background: #fff;
+}
