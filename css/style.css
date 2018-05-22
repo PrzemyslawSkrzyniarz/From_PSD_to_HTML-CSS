@@ -57,13 +57,45 @@ h2 {
 #tlo_gora_gradient {
     background: url(../img/tlo_gora_gradient.jpg) no-repeat;
     width: 967px;
-    margin: 0 auto; /* g/d boki */
+    margin: 0 auto;
+    /* g/d boki */
     height: 79px;
     position: relative;
 }
 
-#gora{
+#gora {
     width: 967px;
     height: 116px;
     background: #fff;
+}
+
+/* Nawigacja */
+
+nav {
+    position: absolute;
+    top: -16px;
+    right: 20px;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+nav li a {
+    padding: 40px 28px 12px 28px;
+    /* g(t) p(r) d l */
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    /* Ze względu na czcionkę niekonieczne */
+    font-family: 'BeabsNeue';
+    font-size: 24px;
+    color: #000;
+}
+
+nav li a:hover {
+    background: #4a914a;
+    color: #fff;
 }
