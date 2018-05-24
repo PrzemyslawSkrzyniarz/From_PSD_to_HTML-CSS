@@ -126,3 +126,32 @@ nav li a:hover {
     top: 230px;
     left: 486px;
 }
+
+/* Cienie góra */
+
+#cien_gora_lewy {
+    background: url(../img/cien_gora_lewy.jpg) no-repeat;
+    position: absolute;
+    width: 42px;
+    height: 690px;
+    top: 0;
+    left: -42px;
+}
+
+#cien_gora_prawy {
+    background: url(../img/cien_gora_prawy.jpg) no-repeat;
+    position: absolute;
+    width: 42px;
+    height: 690px;
+    top: 0;
+    left: 967px;
+}
+
+#cien_baner_dol {
+    background: url(../img/cien_baner_dol.jpg) no-repeat;
+    position: absolute;
+    width: 967px;
+    height: 31px;
+    top: 690px;
+    left: 0px;
+}
