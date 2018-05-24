@@ -155,3 +155,48 @@ nav li a:hover {
     top: 690px;
     left: 0px;
 }
+
+/* Boxy góra */
+
+#boxy_gora {
+    height: 200px;
+}
+
+#box_gora_1 a {
+    position: absolute;
+    display: block;
+    width: 334px;
+    height: 200px;
+    left: 0;
+    background: url(../img/box_1.jpg) no-repeat;
+}
+
+#box_gora_2 a {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 200px;
+    left: 334px;
+    background: url(../img/box_2.jpg) no-repeat;
+}
+
+#box_gora_3 a {
+    position: absolute;
+    display: block;
+    width: 334px;
+    height: 200px;
+    right: 0;
+    background: url(../img/box_3.jpg) no-repeat;
+}
+
+#box_gora_1 a:hover {
+    background: url(../img/box_1_hover.jpg) no-repeat;
+}
+
+#box_gora_2 a:hover {
+    background: url(../img/box_2_hover.jpg) no-repeat;
+}
+
+#box_gora_3 a:hover {
+    background: url(../img/box_3_hover.jpg) no-repeat;
+}
