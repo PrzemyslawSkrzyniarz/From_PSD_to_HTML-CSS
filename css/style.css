@@ -200,3 +200,17 @@ nav li a:hover {
 #box_gora_3 a:hover {
     background: url(../img/box_3_hover.jpg) no-repeat;
 }
+
+/* Główna zawartość - <section> - jest jedno więc nie trzeba specjalnie definiować */
+
+section {
+    background: #f7f7f7;
+    width: 100%;
+}
+
+#zawartosc{
+    width: 900px;
+    padding: 33px;
+    margin: 0 auto;
+    /* g(u)/d boki(sides) */
+}
