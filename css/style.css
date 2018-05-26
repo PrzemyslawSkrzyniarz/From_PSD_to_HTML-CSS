@@ -208,9 +208,48 @@ section {
     width: 100%;
 }
 
-#zawartosc{
+#zawartosc {
     width: 900px;
     padding: 33px;
     margin: 0 auto;
     /* g(u)/d boki(sides) */
+}
+
+/* Artykuły */
+
+#artykuly {
+    background: #fff;
+    margin: 70px 0;
+    height: 299px;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+/* Odwołuję się do każdego elementu article w elemencie artykuly */
+
+#artykuly article {
+    width: 207px;
+    height: 210px;
+    margin: 24px 0;
+    float: left;
+    /* float z wartością left aby artykuły były ułożone obok siebie */
+    position: relative;
+    padding: 24px 5% 0 5%;
+    /* g(u) p(r) d l */
+}
+
+/* Dodaje delikatne obramowanie dla drugiego artykułu - tego po środku */
+
+#drugi_art {
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+}
+
+#artykuly article p {
+    height: 130px;
+    /* Taka wysokość jest w pliku PSD */
+    color: #707070;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
 }
